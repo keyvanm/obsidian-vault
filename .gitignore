@@ -1,0 +1,13 @@
+# Obsidian
+.trash
+.obsidian/workspace*
+!.obsidian/workspaces.json
+
+.obsidian/plugins/copilot/data.json
+.obsidian/plugins/obsidian-textgenerator-plugin/data.json
+.obsidian/plugins/smart-second-brain/data.json
+.obsidian/plugins/recent-files-obsidian/data.json
+
+# Private spaces
+private/
+private-*/

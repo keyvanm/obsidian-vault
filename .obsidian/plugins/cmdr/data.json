@@ -4,7 +4,26 @@
   "debug": false,
   "editorMenu": [],
   "fileMenu": [],
-  "leftRibbon": [],
+  "leftRibbon": [
+    {
+      "id": "quickadd:choice:9b32e02a-469b-4beb-a2ad-751c728d0b8a",
+      "icon": "lucide-pencil",
+      "name": "QuickAdd: Quick Note",
+      "mode": "desktop"
+    },
+    {
+      "id": "quickadd:choice:76e7f0ec-01b1-4ce1-acec-8509fbb98660",
+      "icon": "lucide-pencil",
+      "name": "QuickAdd: Quick Note (mobile)",
+      "mode": "mobile"
+    },
+    {
+      "id": "quickadd:choice:e066fc54-ee08-4c5c-99f1-32d4d08dde68",
+      "icon": "check-circle",
+      "name": "QuickAdd: Quick Task",
+      "mode": "any"
+    }
+  ],
   "rightRibbon": [],
   "titleBar": [],
   "statusBar": [],

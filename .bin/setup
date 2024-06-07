@@ -22,4 +22,6 @@ COUNT=$(grep -E -Hn "$SEARCH_PATTERN" .obsidian/plugins/*/manifest.json | wc -l 
 # Find all manifest.json files in the specified directories and perform the replacement using sed
 find .obsidian/plugins/*/manifest.json -type f -exec $SED_COMMAND -i'' -e "s/$SEARCH_PATTERN/$REPLACEMENT_STRING/g" {} +
 
+rm .obsidian/plugins/*/manifest.json-e
+
 echo "✅ Set ${COUNT} plugin versions to 0. Go to Obsidian settings and update plugins."

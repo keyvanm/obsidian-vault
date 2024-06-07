@@ -3,10 +3,11 @@
 .obsidian/workspace*
 !.obsidian/workspaces.json
 
-.obsidian/plugins/*/*
-!obsidian/plugins/*/manifest.json
-!obsidian/plugins/*/data.json
-!obsidian/plugins/*/data.json.copy
+.obsidian/plugins/**/*
+!.obsidian/plugins/**/
+!.obsidian/plugins/**/manifest.json
+!.obsidian/plugins/**/data.json
+!.obsidian/plugins/**/data.copy.json
 
 .obsidian/plugins/copilot/data.json
 .obsidian/plugins/obsidian-textgenerator-plugin/data.json

@@ -1,0 +1,17 @@
+- [ ] todo
+- [*] * star
+- [!] ! exclamation
+- [-] - canceled
+- [?] ? question
+- [c]  c
+- [d] Down?
+- [p] Positive?
+- [w] Win?
+- [i] Info
+- [l] Location
+- [k] Key
+- [f] Fire
+- [b] Bookmark
+- ["] "quotation
+- [/] / in progress
+- [x] x done

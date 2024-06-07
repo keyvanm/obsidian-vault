@@ -1,5 +1,9 @@
 [
   "table-editor-obsidian",
   "calendar",
-  "dataview"
+  "dataview",
+  "obsidian-day-planner",
+  "obsidian-outliner",
+  "quickadd",
+  "recent-files-obsidian"
 ]

@@ -1,0 +1,3 @@
+[submodule "basic"]
+	path = basic
+	url = git@github.com:keyvanm/basic-vaultspace-template.git

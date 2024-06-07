@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+if [ ! -d "./.obsidian" ]; then
+  echo "Error: .obsidian directory not found in the working directory."
+  exit 1
+fi
+
+# Determine the correct sed command based on the OS
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  # macOS
+  SED_COMMAND="sed -i '' -E"
+else
+  # Linux and other Unix-like systems
+  SED_COMMAND="sed -i -E"
+fi
+
+# Define the search pattern and the replacement string
+SEARCH_PATTERN='\"version\": \".+\"'
+REPLACEMENT_STRING='\"version\": \"0\"'
+
+COUNT=$(grep -E -Hn "$SEARCH_PATTERN" .obsidian/plugins/*/manifest.json | wc -l | xargs)
+# Find all manifest.json files in the specified directories and perform the replacement using sed
+find .obsidian/plugins/*/manifest.json -type f -exec $SED_COMMAND -i'' -e "s/$SEARCH_PATTERN/$REPLACEMENT_STRING/g" {} +
+
+echo "✅ Set ${COUNT} plugin versions to 0. Go to Obsidian settings and update plugins."

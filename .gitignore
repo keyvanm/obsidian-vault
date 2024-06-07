@@ -8,6 +8,8 @@
 .obsidian/plugins/smart-second-brain/data.json
 .obsidian/plugins/recent-files-obsidian/data.json
 
+.obsidian/plugins/obsidian-textgenerator-plugin/main.js
+
 # Private spaces
 private/
 private-*/

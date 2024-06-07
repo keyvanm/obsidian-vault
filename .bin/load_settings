@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+if [ ! -d "./.obsidian" ]; then
+  echo "Error: .obsidian directory not found in the working directory."
+  exit 1
+fi
+
+# Find all files named "data.copy.json" under the ".obsidian/plugins/" directory
+find .obsidian/plugins -type f -name "data.copy.json" | while read -r copy_file; do
+    # Define the path for the adjacent "data.json"
+    data_file=$(dirname "$copy_file")/data.json
+
+    # Check if "data.json" does not exist
+    if [ ! -f "$data_file" ]; then
+        # Copy the contents of "data.copy.json" to "data.json"
+        cp "$copy_file" "$data_file"
+        echo "Copied $copy_file to $data_file"
+    fi
+done

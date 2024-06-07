@@ -1,5 +1,6 @@
 {
   "obsidian-editor-shortcuts:selectLine": [],
   "editor:delete-paragraph": [],
-  "table-editor-obsidian:table-control-bar": []
+  "table-editor-obsidian:table-control-bar": [],
+  "obsidian-editor-shortcuts:joinLines": []
 }

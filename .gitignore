@@ -3,12 +3,16 @@
 .obsidian/workspace*
 !.obsidian/workspaces.json
 
+.obsidian/plugins/**/*
+!.obsidian/plugins/**/
+!.obsidian/plugins/**/manifest.json
+!.obsidian/plugins/**/data.json
+!.obsidian/plugins/**/data.copy.json
+
 .obsidian/plugins/copilot/data.json
 .obsidian/plugins/obsidian-textgenerator-plugin/data.json
 .obsidian/plugins/smart-second-brain/data.json
 .obsidian/plugins/recent-files-obsidian/data.json
-
-.obsidian/plugins/obsidian-textgenerator-plugin/main.js
 
 # Private spaces
 private/

@@ -1,6 +1,3 @@
-[submodule "basic"]
-	path = basic
-	url = git@github.com:keyvanm/basic-vaultspace-template.git
 [submodule "kaospad"]
 	path = kaospad
 	url = git@github.com:keyvanm/kaospad-vaultspace-template.git

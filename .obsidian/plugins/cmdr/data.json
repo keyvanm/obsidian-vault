@@ -32,13 +32,13 @@
       "id": "obsidian-footnotes:insert-autonumbered-footnote",
       "icon": "plus-square",
       "name": "Footnote Shortcut: Insert / Navigate Auto-Numbered Footnote",
-      "mode": "any"
+      "mode": "desktop"
     },
     {
       "id": "templater-obsidian:insert-templater",
       "icon": "templater-icon",
       "name": "Templater: Open Insert Template modal",
-      "mode": "any"
+      "mode": "desktop"
     },
     {
       "id": "obsidian-textgenerator-plugin:insert-generated-text-From-template",

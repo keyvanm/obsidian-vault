@@ -13,7 +13,7 @@
   "freeCursorOnStreaming": false,
   "allowJavascriptRun": false,
   "experiment": false,
-  "promptsPath": "textgenerator/templates",
+  "promptsPath": "_/prompts",
   "textGenPath": "textgenerator/",
   "prefix": "\n\n",
   "tgSelectionLimiter": "^\\*\\*\\*",
@@ -21,8 +21,8 @@
   "context": {
     "customInstructEnabled": true,
     "includeClipboard": true,
-    "customInstruct": "{{tg_selection}}",
-    "contextTemplate": "# {{title}}\n\n{{tg_selection}}\n\n---\nextra context:\n{{starredBlocks}}"
+    "customInstruct": "# System instructions\n\n## Preferences\nIn order of preference (higher in the list means higher preference)\n- shorter answers \n- enough explaination, for parts of your answer that could require some explaination\n\n---\n\n{{#if tg_selection }}\n{{tg_selection}}\n{{else}}\nWrite a short paragraph about the following: {{title}}\n{{/if}}",
+    "contextTemplate": "# {{title}}\n{{#if yaml.description}}\n{{ yaml.description }}\n{{/if}}\n\n{{#if highlights}}\nHighlights\n========\n\n{{#each highlights}}\n- {{this}}\n{{/each}}\n{{/if}}\n\n{{#if starredBlocks}}\nNotable Sections\n=============\n\n{{ starredBlocks }}\n{{/if}}"
   },
   "requestTimeout": 300000,
   "options": {
@@ -91,8 +91,12 @@
     },
     "OpenAI Chat (Langchain)": {
       "basePath": "https://api.openai.com/v1",
+      "api_key": "",
       "model": "gpt-4o"
     }
   },
-  "LLMProviderOptionsKeysHashed": {}
+  "LLMProviderOptionsKeysHashed": {
+    "OpenAI Chat (Langchain).api_key": "__@#key_prefix#@__${OPEN_AI_API_KEY}"
+  },
+  "api_key_encrypted": "__@#key_prefix#@__${OPEN_AI_API_KEY}"
 }

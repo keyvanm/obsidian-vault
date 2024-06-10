@@ -1,0 +1,33 @@
+{
+  "enabledpluginsgroup": [
+    {
+      "id": "1717931262886",
+      "name": "Default",
+      "icontype": "lucide",
+      "icon": "puzzle",
+      "enabledplugins": [
+        "table-editor-obsidian",
+        "calendar",
+        "dataview",
+        "obsidian-day-planner",
+        "quickadd",
+        "recent-files-obsidian",
+        "obsidian-better-command-palette",
+        "obsidian-editor-shortcuts",
+        "cmdr",
+        "obsidian-footnotes",
+        "settings-search",
+        "obsidian-shellcommands",
+        "obsidian-text-format",
+        "nldates-obsidian",
+        "obsidian-textgenerator-plugin",
+        "templater-obsidian",
+        "obsidian-hotkeys-for-templates",
+        "obsidian-command-alias-plugin",
+        "settings-management"
+      ]
+    }
+  ],
+  "enabledcsssnippets": [],
+  "pluginsgridtype": "grid"
+}

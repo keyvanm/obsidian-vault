@@ -6,8 +6,8 @@
       "type": "Capture",
       "command": true,
       "appendLink": false,
-      "captureTo": "",
-      "captureToActiveFile": true,
+      "captureTo": "space/Calendar/{{date:MMMM Do YYYY}}.md",
+      "captureToActiveFile": false,
       "createFileIfItDoesntExist": {
         "enabled": false,
         "createWithTemplate": false,
@@ -18,8 +18,8 @@
         "format": "\n> [!NOTE]-\n```js quickadd\nconst input = await this.quickAddApi.wideInputPrompt(\"Quick Note\");\nif (!input) throw \"Quick Note Cancelled\"\nreturn input.split('\\n').map(line => `> ` + line).join('\\n')\n```\n> \n> [created:: {{DATE:MMMM Do YYYY HH:MM}}]\n"
       },
       "insertAfter": {
-        "enabled": false,
-        "after": "",
+        "enabled": true,
+        "after": "# Notes",
         "insertAtEnd": false,
         "considerSubsections": false,
         "createIfNotFound": false,
@@ -41,8 +41,8 @@
       "type": "Capture",
       "command": true,
       "appendLink": false,
-      "captureTo": "",
-      "captureToActiveFile": true,
+      "captureTo": "space/Calendar/{{date:MMMM Do YYYY}}.md",
+      "captureToActiveFile": false,
       "createFileIfItDoesntExist": {
         "enabled": false,
         "createWithTemplate": false,
@@ -53,8 +53,8 @@
         "format": "\n> [!NOTE]-\n> {{value}}\n> \n> [created:: {{DATE:MMMM Do YYYY HH:MM}}]\n"
       },
       "insertAfter": {
-        "enabled": false,
-        "after": "",
+        "enabled": true,
+        "after": "# Notes",
         "insertAtEnd": false,
         "considerSubsections": false,
         "createIfNotFound": false,
@@ -76,7 +76,7 @@
       "type": "Capture",
       "command": true,
       "appendLink": false,
-      "captureTo": "",
+      "captureTo": "space/Calendar/{{date:MMMM Do YYYY}}.md",
       "captureToActiveFile": false,
       "createFileIfItDoesntExist": {
         "enabled": false,
@@ -84,19 +84,19 @@
         "template": ""
       },
       "format": {
-        "enabled": false,
-        "format": ""
+        "enabled": true,
+        "format": "\n- [ ] {{value}}"
       },
       "insertAfter": {
-        "enabled": false,
-        "after": "",
+        "enabled": true,
+        "after": "## Today's tasks",
         "insertAtEnd": false,
         "considerSubsections": false,
         "createIfNotFound": false,
         "createIfNotFoundLocation": "top"
       },
       "prepend": false,
-      "task": true,
+      "task": false,
       "openFileInNewTab": {
         "enabled": false,
         "direction": "vertical",
@@ -104,6 +104,71 @@
       },
       "openFile": false,
       "openFileInMode": "default"
+    },
+    {
+      "id": "fde043b1-3382-4403-8221-341aafe4eaad",
+      "name": "New draft",
+      "type": "Template",
+      "command": true,
+      "templatePath": "_/_/Empty template.md",
+      "fileNameFormat": {
+        "enabled": true,
+        "format": "{{DATE:MMM D YYYY  HH mm ss SSS}}"
+      },
+      "folder": {
+        "enabled": true,
+        "folders": [
+          "space/📝 Drafts"
+        ],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": false
+      },
+      "appendLink": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default",
+      "fileExistsMode": "Increment the file name",
+      "setFileExistsBehavior": false
+    },
+    {
+      "id": "5179c8c0-81f1-45df-b2d4-b228e757129f",
+      "name": "Create new",
+      "type": "Template",
+      "command": true,
+      "templatePath": "_/_/Empty template.md",
+      "fileNameFormat": {
+        "enabled": true,
+        "format": "{{DATE:MMMM Do YYYY  HH mm ss}}"
+      },
+      "folder": {
+        "enabled": true,
+        "folders": [
+          "space/📝 Drafts",
+          "space/Notes",
+          "space/Ideas",
+          "space/Projects",
+          "space/Documents",
+          "space/Calendar"
+        ],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": false
+      },
+      "appendLink": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default",
+      "fileExistsMode": "Increment the file name",
+      "setFileExistsBehavior": false
     }
   ],
   "macros": [],

@@ -1,0 +1,31 @@
+h1, .markdown-rendered h1 {
+  margin-top: var(--heading-spacing-h1);
+  font-variant: petite-caps;
+  font-weight: 400;
+  font-stretch: expanded;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--color-base-30);
+}
+
+h2, .markdown-rendered h2 {
+  margin-top: var(--heading-spacing-h2) !important;
+}
+
+h3, .markdown-rendered h3 {
+  margin-block-start: calc(var(--heading-spacing-h3) * 7) !important;
+  margin-bottom: var(--heading-spacing-h3) !important;
+}
+
+.inline-title {
+  padding-bottom: var(--p-spacing);
+  border-bottom: 1px solid var(--color-base-30);
+}
+
+/* .markdown-preview-section .inline-title {
+  border-bottom: 1px solid var(--color-base-30);
+} */
+
+.markdown-rendered ul, .markdown-rendered ol {
+  margin-block-start: calc(var(--p-spacing) / 2);
+  margin-block-end: var(--p-spacing);
+}

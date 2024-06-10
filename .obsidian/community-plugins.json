@@ -3,7 +3,6 @@
   "calendar",
   "dataview",
   "obsidian-day-planner",
-  "obsidian-outliner",
   "quickadd",
   "recent-files-obsidian",
   "obsidian-better-command-palette",
@@ -15,6 +14,8 @@
   "obsidian-text-format",
   "nldates-obsidian",
   "obsidian-textgenerator-plugin",
-  "obsidian-git",
-  "templater-obsidian"
+  "templater-obsidian",
+  "obsidian-hotkeys-for-templates",
+  "obsidian-command-alias-plugin",
+  "settings-management"
 ]

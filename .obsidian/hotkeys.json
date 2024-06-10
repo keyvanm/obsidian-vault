@@ -2,5 +2,81 @@
   "obsidian-editor-shortcuts:selectLine": [],
   "editor:delete-paragraph": [],
   "table-editor-obsidian:table-control-bar": [],
-  "obsidian-editor-shortcuts:joinLines": []
+  "obsidian-editor-shortcuts:joinLines": [],
+  "editor:toggle-source": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "I"
+    }
+  ],
+  "obsidian-hotkeys-for-templates:templater:Wrap selection in Title Case reference.md": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "R"
+    }
+  ],
+  "editor:swap-line-up": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "ArrowUp"
+    }
+  ],
+  "editor:swap-line-down": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "ArrowDown"
+    }
+  ],
+  "obsidian-footnotes:insert-autonumbered-footnote": [
+    {
+      "modifiers": [
+        "Ctrl"
+      ],
+      "key": "1"
+    }
+  ],
+  "obsidian-hotkeys-for-templates:templater:GPT Query Templater.md": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "J"
+    }
+  ],
+  "obsidian-hotkeys-for-templates:templater:GPT Query.md": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "G"
+    }
+  ],
+  "obsidian-textgenerator-plugin:generate-text": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "j"
+    },
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "Enter"
+    }
+  ],
+  "obsidian-editor-shortcuts:insertLineBelow": [],
+  "editor:open-link-in-new-leaf": []
 }

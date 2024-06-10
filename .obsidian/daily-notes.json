@@ -1,4 +1,5 @@
 {
   "folder": "Calendar",
-  "template": "Calendar/_/Daily Note Template"
+  "template": "Calendar/_/Daily Note Template",
+  "format": "MMMM Do YYYY"
 }

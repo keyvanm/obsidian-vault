@@ -35,6 +35,12 @@
       "mode": "desktop"
     },
     {
+      "id": "insert-template",
+      "icon": "lucide-copy",
+      "name": "Templates: Insert template",
+      "mode": "desktop"
+    },
+    {
       "id": "templater-obsidian:insert-templater",
       "icon": "templater-icon",
       "name": "Templater: Open Insert Template modal",
@@ -44,7 +50,7 @@
       "id": "obsidian-textgenerator-plugin:insert-generated-text-From-template",
       "icon": "bot",
       "name": "Text Generator: Templates: Generate & Insert",
-      "mode": "any"
+      "mode": "desktop"
     }
   ],
   "macros": [],

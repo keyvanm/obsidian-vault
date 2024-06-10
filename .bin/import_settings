@@ -10,10 +10,7 @@ find .obsidian/plugins -type f -name "data.copy.json" | while read -r copy_file;
     # Define the path for the adjacent "data.json"
     data_file=$(dirname "$copy_file")/data.json
 
-    # Check if "data.json" does not exist
-    if [ ! -f "$data_file" ]; then
-        # Copy the contents of "data.copy.json" to "data.json"
-        cp "$copy_file" "$data_file"
-        echo "Copied $copy_file to $data_file"
-    fi
+      # Copy the contents of "data.copy.json" to "data.json" while loading env into template variables
+      envsubst < "$copy_file" > "$data_file"
+      echo "Copied $copy_file to $data_file"
 done

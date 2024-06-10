@@ -1,3 +1,5 @@
+.env
+
 # Obsidian
 .trash
 .obsidian/workspace*
@@ -13,3 +15,9 @@
 .obsidian/plugins/obsidian-textgenerator-plugin/data.json
 .obsidian/plugins/smart-second-brain/data.json
 .obsidian/plugins/recent-files-obsidian/data.json
+
+.obsidian/text-generator.json
+
+# Content
+📝 Drafts/*
+!📝 Drafts/.gitkeep

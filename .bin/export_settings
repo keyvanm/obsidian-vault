@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+# Define the directory containing the JSON files
+directory=".obsidian/plugins/*/data.json"
+
+# Define the keys to search for
+keys=("api_key" "apikey" "secret")
+
+# Function to strip specified keys' values in a JSON file
+strip_keys() {
+    local input_file=$1
+    local output_file=$2
+
+    # Copy input file to output file first
+    cp "$input_file" "$output_file"
+
+    # Use sed to replace values for specified keys with an empty string
+    for key in "${keys[@]}"; do
+        sed -i.bak -E "s/(\"[^\"]*${key}[^\"]*\"[[:space:]]*:[[:space:]]*\")[^\"]*(\")/\1\2/g" "$output_file"
+        rm "${output_file}.bak"
+    done
+}
+
+
+# Loop through each JSON file in the directory
+for file in $directory; do
+    # Check if data.copy.json exists next to data.json
+    copy_file=$(dirname "$file")/data.copy.json
+    if [[ -f "$copy_file" ]]; then
+        # Create a temporary file for processing
+        temp=$(mktemp)
+
+        # Strip specified keys' values and write to temporary file
+        strip_keys "$file" "$temp"
+
+        # Overwrite data.copy.json with modified content
+        mv "$temp" "$copy_file"
+    fi
+done
+
+echo "Processing complete."

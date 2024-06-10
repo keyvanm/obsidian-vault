@@ -214,7 +214,7 @@
           "type": "single-line-text",
           "label": "Symlink from",
           "description": "",
-          "default_value": "../___/space/",
+          "default_value": "",
           "target_variable_id": "ly48t83md0",
           "required": true
         },

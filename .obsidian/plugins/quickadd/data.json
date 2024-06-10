@@ -6,7 +6,7 @@
       "type": "Capture",
       "command": true,
       "appendLink": false,
-      "captureTo": "space/Calendar/{{date:MMMM Do YYYY}}.md",
+      "captureTo": "Calendar/{{date:MMMM Do YYYY}}.md",
       "captureToActiveFile": false,
       "createFileIfItDoesntExist": {
         "enabled": false,
@@ -41,7 +41,7 @@
       "type": "Capture",
       "command": true,
       "appendLink": false,
-      "captureTo": "space/Calendar/{{date:MMMM Do YYYY}}.md",
+      "captureTo": "Calendar/{{date:MMMM Do YYYY}}.md",
       "captureToActiveFile": false,
       "createFileIfItDoesntExist": {
         "enabled": false,
@@ -76,7 +76,7 @@
       "type": "Capture",
       "command": true,
       "appendLink": false,
-      "captureTo": "space/Calendar/{{date:MMMM Do YYYY}}.md",
+      "captureTo": "Calendar/{{date:MMMM Do YYYY}}.md",
       "captureToActiveFile": false,
       "createFileIfItDoesntExist": {
         "enabled": false,
@@ -118,7 +118,7 @@
       "folder": {
         "enabled": true,
         "folders": [
-          "space/📝 Drafts"
+          "📝 Drafts"
         ],
         "chooseWhenCreatingNote": false,
         "createInSameFolderAsActiveFile": false,
@@ -148,12 +148,13 @@
       "folder": {
         "enabled": true,
         "folders": [
-          "space/📝 Drafts",
-          "space/Notes",
-          "space/Ideas",
-          "space/Projects",
-          "space/Documents",
-          "space/Calendar"
+          "📝 Drafts",
+          "Chats",
+          "Ideas",
+          "Projects",
+          "Documents",
+          "Calendar",
+          "Catalogue"
         ],
         "chooseWhenCreatingNote": false,
         "createInSameFolderAsActiveFile": false,
@@ -176,7 +177,7 @@
   "devMode": false,
   "templateFolderPath": "",
   "announceUpdates": false,
-  "version": "1.9.0",
+  "version": "0",
   "disableOnlineFeatures": true,
   "ai": {
     "defaultModel": "Ask me",

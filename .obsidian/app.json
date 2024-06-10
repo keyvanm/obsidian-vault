@@ -1,7 +1,7 @@
 {
   "trashOption": "local",
   "newFileLocation": "current",
-  "newFileFolderPath": "space/📥 Inbox",
+  "newFileFolderPath": "📥 Inbox",
   "promptDelete": false,
   "mobileToolbarCommands": [
     "editor:insert-wikilink",

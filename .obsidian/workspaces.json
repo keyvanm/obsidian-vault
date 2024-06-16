@@ -133,6 +133,7 @@
       },
       "left-ribbon": {
         "hiddenItems": {
+          "templates:Insert template": true,
           "templater-obsidian:Templater": true,
           "table-editor-obsidian:Advanced Tables Toolbar": true,
           "switcher:Open quick switcher": false,

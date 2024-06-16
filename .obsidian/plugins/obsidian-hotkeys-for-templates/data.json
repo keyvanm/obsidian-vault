@@ -1,7 +1,8 @@
 {
   "files": [],
   "templaterFiles": [
-    "Wrap selection in Title Case reference.md"
+    "Wrap selection in Title Case reference.md",
+    "GPT Query.md"
   ],
   "newFileTemplates": [],
   "openNewFileTemplateInNewPane": true,

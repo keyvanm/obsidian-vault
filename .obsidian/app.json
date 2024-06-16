@@ -39,6 +39,6 @@
   },
   "useTab": false,
   "alwaysUpdateLinks": true,
-  "newLinkFormat": "relative",
   "attachmentFolderPath": "_/attachments"
+  "newLinkFormat": "shortest",
 }

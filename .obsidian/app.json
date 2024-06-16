@@ -1,44 +1,12 @@
 {
   "trashOption": "local",
-  "newFileLocation": "current",
+  "newFileLocation": "folder",
   "newFileFolderPath": "📥 Inbox",
   "promptDelete": false,
-  "mobileToolbarCommands": [
-    "editor:insert-wikilink",
-    "editor:insert-tag",
-    "editor:undo",
-    "editor:redo",
-    "editor:insert-horizontal-rule",
-    "editor:set-heading",
-    "editor:toggle-bold",
-    "editor:toggle-italics",
-    "editor:toggle-strikethrough",
-    "editor:toggle-highlight",
-    "editor:toggle-code",
-    "editor:toggle-blockquote",
-    "editor:insert-link",
-    "editor:toggle-bullet-list",
-    "editor:toggle-numbered-list",
-    "editor:toggle-checklist-status",
-    "editor:indent-list",
-    "editor:unindent-list",
-    "obsidian-footnotes:insert-autonumbered-footnote",
-    "editor:attach-file",
-    "obsidian-hotkeys-for-templates:templater:Wrap selection in Title Case reference.md",
-    "editor:configure-toolbar"
-  ],
   "userIgnoreFilters": [
     "/(^|/)_.*/"
   ],
-  "pdfExportSettings": {
-    "includeName": true,
-    "pageSize": "Letter",
-    "landscape": false,
-    "margin": "0",
-    "downscalePercent": 100
-  },
   "useTab": false,
   "alwaysUpdateLinks": true,
   "attachmentFolderPath": "_/attachments"
-  "newLinkFormat": "shortest",
 }
